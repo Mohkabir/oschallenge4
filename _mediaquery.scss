@@ -1,0 +1,212 @@
+@media (min-width: 600px){
+  body{
+    font-size: 16px;
+    header{
+      .header_1{
+        padding: 1em;
+        text-align: center;
+        justify-content: space-between;
+        display: none;
+        .contact{
+          width: 60%;
+          display: flex;
+          div{
+            margin: 0em 0.5em;
+            img{
+              width: 20px;
+              margin-right: 0.4em;
+              border: 2px solid #000000;
+            }
+          }
+        }
+        .social_media{
+          width: 40%;
+          img{
+            width: 30px;
+            border: 2px solid #000000;
+          }
+        }
+      }
+      .header_2{
+        .navigation{
+          display: flex;
+          justify-content: space-between;
+          div{
+            text-align: center;
+            margin: 2em;
+          }
+          .nav_big_screen{
+            display:block;
+            a{
+              display: inline-block;
+              height: 50px;
+              color: #777777;
+              margin: 0em 0.5em;
+              &:hover{
+                background-color: #FCFCFE;
+              }
+            }
+          }
+          select{
+            display: none;
+          }
+        }
+        .header_img{
+          background-image: url('./images/background\ 1.jpg');
+          color: #ffffff;
+          padding: 2em;
+          margin: 1em 0em;
+          button{
+            padding: 0.5em;
+            background-color: #50C6C6;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    main{
+      .section_1{
+        .column_1{
+          grid-column: span 3;
+        }
+        .column_2{
+          grid-column: span 3;
+        }
+        .column_3{
+          grid-column: span 3;
+        }
+        .column_4{
+          grid-column: span 3;
+        }
+      }
+      .section_2{
+        gap: 20px;
+        .column_1{
+          grid-column: span 12;
+        }
+        .column_2{
+          grid-column: span 4;
+        }
+        .column_3{
+          grid-column: span 4;
+        }
+        .column_4{
+          grid-column: span 4;
+        }
+      }
+      .section_3{
+        .column_1{
+          grid-column: span 6;
+        }
+        .column_2{
+          grid-column: span 6;
+        }
+      }
+      .section_4{
+        div{
+          img{
+            width: 80%;
+          }
+        }
+        .column_1{
+          grid-column: span 12;
+        }
+        .column_2{
+          grid-column: span 3;
+        }
+        .column_3{
+          grid-column: span 3; 
+        }
+        .column_4{
+          grid-column: span 3;
+        }
+        .column_5{
+          grid-column: span 3;
+        }
+      }
+      .section_5{
+        padding: 7em 0em;
+        div{
+          text-align: center;
+          img{
+            width: 90%;
+            border-radius: 1000px;
+            border: 1px solid #7ED4D4;
+            margin: 2em 0em;
+          }
+        }
+        .column_1{
+          grid-column: span 12;
+        }
+        .column_2{
+          grid-column: span 2;
+        }
+        .column_3{
+          grid-column: span 2;
+        }
+        .column_4{
+          grid-column: span 2;
+        }
+        .column_5{
+          grid-column: span 2;
+        }
+        .column_6{
+          grid-column: span 2;
+        }
+        .column_7{
+          grid-column: span 2;
+        }
+      }
+      .section_6{
+        .column_1{
+          display: flex;
+          margin: 1em 0em;
+          grid-column: span 6;
+          img{
+            width: 40px;
+          }
+          h2{
+            font-size: 2.3em;
+          }
+        }
+        .column_2{
+          grid-column: span 6;
+          input{
+            width: 60%;
+          }
+          button{
+            padding: 0.5em ;
+            margin: 0em 0.3em;
+          }
+        }
+      }
+      .section_7{
+        .column_1{
+          grid-column: span 6;
+          h2{
+            font-size: 2em;
+            margin: 0.5em 0em;
+          }
+          .info_container{
+            .info{
+              margin: 1em 0em;
+            }
+            .time{
+              margin: 1em 0em;
+              p{
+                margin:0.4em 0em;
+              }
+              img{
+                width: 10px;
+                margin-right: 0.3em;
+              }
+            }
+          }
+        }
+        .column_2{
+          grid-column: span 6;
+        }
+      }
+    }
+  }
+}
