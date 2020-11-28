@@ -6,6 +6,27 @@
   padding: 0em;
   outline: none;
   box-sizing: border-box;
+  text-decoration: none;
+}
+h1,h2,h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+  color: #50C6C6;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #50C6C6;
+  }
+}
+
+@keyframes prev {
+  0%{transform: translateX(-80px) }
+  100%{transform: translateX(1px)}
+}
+@keyframes next {
+  0%{transform: translateX(80px) }
+  100%{transform: translateX(1px)}
 }
 
 img {
@@ -20,7 +41,7 @@ img {
 
   .color {
     width: 10%;
-    background-color: #56AED4;
+    background-color: #50C6C6;
     padding: 0.1em;
   }
 
@@ -47,9 +68,12 @@ body {
     text-align: center;
     background-color: rgba(161, 220, 221, 0.7);
     position: fixed;
-    bottom: 3em;
-    right: 0em;
+    bottom: 4em;
+    right: 9px;
     border-radius: 10px;
+    &:hover{
+      background-color: #50C6C6;
+    }
 
     .material-icons {
       font-size: 40px;
@@ -88,16 +112,20 @@ body {
   
 
         div {
-          margin: 0.5em;
-          width: 2em;
-          height: 40px;
+          margin: 1em 0.3em;
+          margin-bottom: 15px;
+          width: 30;
+          height: 35px;
           background-color: #1E2022;
+          padding: 5px;
           padding-top: 10px;
           display: inline;
           transition: 500ms;
 
           span {
+          
             font-size: 20px;
+        
           }
         }
 
@@ -164,7 +192,7 @@ body {
       }
 
       .header_2_container{
-        div {
+        .ellusive {
           text-align: center;
           margin: 2em;
   
@@ -195,96 +223,42 @@ body {
             top: 30px;
             width: 100%;
             background-color: #ffffff;
-            padding: 0.2em;
+            padding: 0em;
             border: 1px solid;
             color: #000;
             text-align: left;
-            overflow-y: scroll;
+
+           
             .fa{
               display: none;
             }
-            div{
+            
+            .div{
               margin: 0em;
               padding: 0em;
               text-align: left;
+              .nav_pin{
+                display: none;
+              }
+              .nav_pin_home{
+                display: none;
+              }
             }
             a, li{
               text-decoration: none;
               color: #000000;
-              display: block;
-              padding-left: 5px;
+              
               &:hover{
                 background-color: #50C6C6;
                 color: #ffffff;
               }
             }
+            a{
+              display: block;
+              padding: 8px 8px;
+            }
           
           
-            .pages{
-              a{
-
-              }
-              div{
-                li{
-                  a{
-
-                  }
-                }
-              }
-            }
-            .elements{
-              a{
-
-              }
-              div{
-                li{
-                  a{
-
-                  }
-                }
-              }
-            }
-            .blogs{
-              a{
-
-              }
-              .blogs_overview{
-                a{
-
-                }
-                div{
-                  li{
-                    a{
-  
-                    }
-                  }
-                }
-              }
-              .blogs_post{
-                a{
-
-                }
-                div{
-                  li{
-                    a{
-  
-                    }
-                  }
-                }
-              }
-            }
-            .gallery{
-              a{
-
-              }
-              div{
-                li{
-                  a{
-
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -309,7 +283,7 @@ body {
         color: #ffffff;
         z-index: 200;
 
-        width: 90%;
+        width: 75%;
         display: flex;
         justify-content: space-between;
         display: none;
@@ -324,15 +298,25 @@ body {
           width: 40px;
           padding: 0.5em;
           border-radius: 50px;
-
+          animation-name: prev;
+          animation-duration: 400ms;
+          opacity: 0.6;
+          &:hover{
+            opacity: 1;
+          }
         }
 
         .next_wrapper {
           border: 2px solid;
           width: 40px;
           padding: 0.5em;
-
           border-radius: 50px;
+          animation-name: next;
+          animation-duration: 400ms;
+          opacity: 0.6;
+          &:hover{
+            opacity: 1;
+          }
         }
       }
       .img_tracker {
@@ -361,10 +345,12 @@ body {
     .section_1 {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      
 
       .circle {
         width: 120px;
         height: 120px;
+    
         padding-top: 1px;
         padding-left: 2px;
         margin: 0em auto;
@@ -397,8 +383,8 @@ body {
 
           background-color: #277B7B;
 
-          padding-right: 15px;
-          padding-top: 25px;
+          padding-right: 45px;
+          padding-top: 30px;
           transition: 500ms ease-in-out;
 
 
@@ -417,7 +403,7 @@ body {
         text-align: center;
         background-color: #50C6C6;
         color: #ffffff;
-        padding: 1em 0em;
+        padding: 1em 1.7em;
 
         img {
           width: 150px;
@@ -465,6 +451,7 @@ body {
         margin-bottom: 2em;
 
         span {
+          color: #ffffff;
           opacity: 0.5;
 
           &:hover {
@@ -477,14 +464,8 @@ body {
           color: #50C6C6;
           margin: 0.5em 0em;
         }
-
-        img {
-          width: 15px;
-          margin-left: 0.4em;
-        }
-
         button {
-          padding: 0.4em 0.3em;
+          padding: 0.4em 0.7em;
           margin-top: 1em;
           background-color: #50C6C6;
           color: #ffffff;
@@ -563,9 +544,10 @@ body {
         }
 
         p {
-          img {
+          display: flex;
+          span{
             width: 10px;
-            margin-right: 0.5em;
+            margin-right: 0.8em;
           }
         }
 
@@ -595,7 +577,7 @@ body {
             color: #ffffff;
             border-radius: 5px;
             border: none;
-            width: 100px;
+            width: 115px;
             transition: 500ms;
 
             &:hover {
@@ -614,7 +596,7 @@ body {
 
       div {
         img {
-          width: 40%;
+          width: 80%;
           margin: 1em 0em;
         }
       }
@@ -647,9 +629,10 @@ body {
     }
 
     .section_5 {
-      padding: 7em 0em;
+      padding: 7em 1em;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      text-align: center;
 
       div {
         text-align: center;
@@ -658,17 +641,28 @@ body {
           width: 90%;
           border-radius: 1000px;
           border: 1px solid #7ED4D4;
-          margin: 2em 0em;
+          margin: 1em 0em;
+          margin-top: 2em;
         }
+      }
+      h3{
+        font-size: 1.2em;
+        margin: 0;
+      }
+      p{
+        margin: 0;
       }
 
       .column_1 {
         grid-column: span 12;
+        
 
         h2 {
           font-size: 2em;
-          margin: 0.5em 0em;
+          margin: 1em 0em;
         }
+         
+        
       }
 
       .column_2 {
@@ -707,11 +701,13 @@ body {
         margin: 0.5em 0em;
         grid-column: span 12;
         display: flex;
+        align-items: center;
 
-        .material-icons {
+        .fa {
           width: 50px;
-          font-size: 50px;
-          color: #287B93;
+          font-size: 40px;
+          color: #287B7B;
+          margin-right: 14px;
         }
 
         h2 {
@@ -754,6 +750,7 @@ body {
         h2 {
           font-size: 2em;
           margin: 0.5em 0em;
+          font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .info_container {
@@ -770,6 +767,9 @@ body {
 
             p {
               margin: 0.4em 0em;
+            }
+            .glyphicon{
+              margin-right: 0.5em;
             }
 
           }
@@ -799,9 +799,16 @@ body {
   footer {
     background-color: #232323;
     color: #777777;
-    text-align: center;
+    text-align: left;
     padding: 3em 0em;
     border-top: 2px solid #373737;
+    a{
+      color: #777777;
+      margin: 1em 0em;
+      &:hover{
+        color: #777777;
+      }
+    }
   }
 }
 
