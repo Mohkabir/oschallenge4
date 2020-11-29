@@ -489,9 +489,18 @@ body main .section_2 .card {
 body main .section_2 .card span {
   color: #ffffff;
   opacity: 0.5;
+  font-size: 0.8em;
+}
+
+body main .section_2 .card span a {
+  opacity: 0.8;
 }
 
 body main .section_2 .card span:hover {
+  opacity: 1;
+}
+
+body main .section_2 .card span:hover a {
   opacity: 1;
 }
 

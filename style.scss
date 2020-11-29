@@ -455,9 +455,18 @@ body {
         span {
           color: #ffffff;
           opacity: 0.5;
+          font-size: 0.8em;
+          a{
+            opacity: 0.8;
+            
+          }
 
           &:hover {
             opacity: 1;
+            a{
+              opacity: 1;
+              
+            }
           }
         }
 
