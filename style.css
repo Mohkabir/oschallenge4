@@ -1079,6 +1079,9 @@ body footer a:hover {
     background-color: #FCFCFE;
     color: #000000;
   }
+  body header .header_2 .header_2_container nav ul .dash {
+    display: none;
+  }
   body header .header_2 .header_2_container nav ul .main {
     font-size: 0.8em;
     text-transform: uppercase;
@@ -1088,7 +1091,7 @@ body footer a:hover {
     color: #000000;
   }
   body header .header_2 .header_2_container nav ul .pages {
-    padding: 23px 5px;
+    padding: 20px 5px;
     width: 80px;
     text-align: center;
     position: relative;
